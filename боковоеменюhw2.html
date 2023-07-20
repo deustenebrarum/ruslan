@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        } 
+
+        main {
+            width: calc(100vw - 4ch - 12em - 4ch);
+            margin: 0 auto;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            font-size: 20px;
+            background-color: rgb(121, 121, 121);
+            height: 100vh;
+            width: calc(2ch + 3em);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: width 1s ease-out;
+        }
+
+        .menu-list {
+            padding: 0;
+            margin: 0;
+            list-style-position: inside;
+            list-style-type: none;
+            overflow: hidden;
+
+        }
+
+        .menu-list > li {
+            padding: 0.5rem 1ch;
+            white-space: nowrap;
+        }
+
+        .menu-list > li:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+
+        .menu-image {
+            height: auto;
+            width: 3em;
+            vertical-align: middle;
+            margin-right: 3ch;
+        }
+
+        .menu:hover {
+            width: calc(2ch + 3em + 14ch);
+        }
+
+        .menu:hover .menu-text {
+            display: inline;
+        }
+
+        .menu-text {
+            vertical-align: middle;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    nav.menu>ul.menu-list>li*5>img.menu-image+span.menu-text{EDIT} 
+    -->
+    <nav class="menu">
+        <ul class="menu-list">
+            <li><img src="icons/menu/edit.png" alt="" class="menu-image"><span class="menu-text">EDIT</span></li>
+            <li><img src="icons/menu/favorites.png" alt="" class="menu-image"><span class="menu-text">FAVORITE</span></li>
+            <li><img src="icons/menu/history.png" alt="" class="menu-image"><span class="menu-text">HISTORY</span></li>
+            <li><img src="icons/menu/security.png" alt="" class="menu-image"><span class="menu-text">SECURITY</span></li>
+            <li><img src="icons/menu/settings.png" alt="" class="menu-image"><span class="menu-text">SETTINGS</span></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste libero dolor quaerat aspernatur vitae! Cum ab aliquid molestiae iste assumenda officiis cupiditate quae, necessitatibus mollitia inventore dolores repudiandae, quia distinctio ipsum, dicta libero ducimus. Laborum enim tempora possimus repellendus! Beatae accusamus voluptatum itaque modi nobis sapiente fuga fugiat ullam nisi? Sapiente nam ullam voluptates nihil earum et vitae ratione facilis dignissimos quaerat exercitationem eveniet id aspernatur obcaecati, accusantium tempore, ex dolorum nesciunt. Similique obcaecati sint nulla, labore quidem accusantium fuga beatae laudantium ullam aut corporis dolores eius. Commodi omnis totam laboriosam quia. Laboriosam, minima quis optio tenetur adipisci odit.</p>
+        <h2>Neque, voluptates!</h2>
+        <p>Asperiores, ratione omnis necessitatibus cum suscipit explicabo vitae! Nesciunt expedita, earum soluta iste porro eius sit quisquam accusantium? At nulla quia ratione laboriosam qui minima cupiditate laborum ducimus quae. Labore minus corporis veritatis eveniet quaerat laboriosam dolorum sunt facere aut asperiores necessitatibus beatae est at, eos nam quia? Officiis provident, fugit, veniam obcaecati asperiores in voluptates incidunt repellat dolores laborum ab excepturi quisquam labore distinctio vel sapiente aut impedit nisi! Exercitationem illum accusamus, quis voluptate distinctio laboriosam praesentium impedit placeat, sit expedita nulla similique provident ab iure unde aut alias saepe minima odit consequuntur modi eaque excepturi enim dignissimos? Id.</p>
+        <h2>Facilis, tempore.</h2>
+        <p>Culpa autem quisquam accusantium nemo ad illo saepe accusamus excepturi vero, perspiciatis ab, dolorem assumenda temporibus ipsum aperiam illum recusandae. Nisi similique quo tempore odio maxime officiis expedita minima numquam rem ipsum accusantium esse architecto iure aliquam laboriosam mollitia saepe, est, quidem in? Eos vel officiis aliquam ex perspiciatis laboriosam omnis repudiandae alias doloribus, sint facilis asperiores inventore, ipsam natus itaque quas placeat nesciunt. Quisquam quia non explicabo ullam dolore at magnam vitae? Possimus quia voluptatibus tempore a nulla reiciendis, assumenda distinctio sint magnam! Non blanditiis sapiente voluptate perferendis provident, id reiciendis, facere, voluptas hic quibusdam placeat quasi? Error, perferendis?</p>
+        <h2>Voluptatem, eveniet.</h2>
+        <p>Quibusdam maxime et necessitatibus est fugit velit voluptatum esse a sequi. Vero ducimus fugit reprehenderit nisi architecto ipsa sint labore repudiandae eaque rem natus similique animi autem maiores vitae recusandae non excepturi minus iure, quod modi commodi. Odio, ad eveniet veniam vero nihil earum? Placeat repudiandae quisquam amet debitis asperiores itaque similique, enim ducimus aliquid quasi adipisci cupiditate ipsam quia sed dolorem doloribus mollitia a praesentium. Eaque, sapiente rem obcaecati quis distinctio totam dignissimos reiciendis culpa voluptas labore cupiditate modi aut! Veniam consequuntur ratione aut tempore ab temporibus mollitia corrupti voluptates accusantium qui voluptatem a, reprehenderit animi architecto cumque neque!</p>
+        <h2>Esse, consequatur.</h2>
+        <p>Earum aspernatur reprehenderit unde harum laudantium voluptatum facilis nobis, qui quisquam placeat impedit ab fugit eveniet culpa quo cum dolorem aliquid quia, numquam voluptate non! Deleniti dignissimos quia iste magni quo exercitationem vel pariatur repudiandae necessitatibus neque nulla molestiae dolores eligendi vero quae nobis magnam, voluptas eos molestias! Maxime, nihil incidunt. Porro hic et, ipsam consequuntur officiis modi. Laudantium excepturi at tenetur. Dignissimos doloremque perferendis deleniti voluptate, deserunt sit reiciendis odit quasi facilis odio minima autem facere voluptatum similique fugiat. Ullam a voluptatum animi magni deserunt soluta aut. Quod maxime aliquid eos ipsum odio nam minima quidem consequuntur quisquam libero.</p>
+        <h2>Labore, optio.</h2>
+        <p>Blanditiis voluptas nulla, eum nesciunt a sunt id iure vel, nam aliquid nostrum. Vitae, magni nesciunt? Deleniti perferendis possimus quo autem et? Sit repellendus beatae alias nostrum! Culpa nam quam quaerat nostrum tenetur dolores corporis minus. Harum aliquid molestias et, eum magnam rerum illo sequi porro, voluptatem ducimus tempore sit. Ea nulla dolores animi totam cum sint sapiente minima maxime quae laudantium. Vel natus possimus exercitationem cum nisi placeat omnis distinctio aspernatur deserunt? Vitae numquam placeat temporibus fugiat aut possimus nulla quod blanditiis aperiam soluta enim, officiis dolor, mollitia voluptates ad quos esse! Commodi odit provident amet ad sit praesentium.</p>
+        <h2>Voluptates, tempore?</h2>
+        <p>Consequuntur aliquid dolores laborum quidem, voluptas iste id nesciunt in error vel sint reiciendis accusantium nihil voluptatem rem reprehenderit possimus dignissimos debitis doloribus quis vero architecto consequatur? Aliquid laboriosam, obcaecati in, cupiditate molestiae labore tempora voluptates modi eum sed at autem dignissimos rerum ullam accusamus veniam nulla. Officiis enim beatae minus deleniti odio nesciunt repudiandae hic aut labore esse quae aliquid deserunt vero ratione, consequuntur atque eligendi quaerat soluta? Ipsa blanditiis perspiciatis, tempore facere, illum minima quo est sit quisquam deleniti dolor ad nulla ratione temporibus voluptates fuga quae quia! Facere nam facilis quas sed illo qui eaque cumque illum.</p>
+        <h2>Amet, iste!</h2>
+        <p>Fuga cumque enim molestiae amet, dolor accusamus, cum sunt fugiat maxime totam placeat eum cupiditate eaque pariatur veniam ipsum. Repellat obcaecati aperiam maxime dicta laborum sit tenetur nobis ipsa aspernatur? Cum quia cupiditate ipsam, omnis corporis explicabo eaque alias enim perferendis hic earum harum, necessitatibus ab quas quae repellendus rerum suscipit voluptate repellat? Libero ratione distinctio quos sunt sint! Voluptate nesciunt aut optio necessitatibus, nihil ratione aperiam. Velit dolorem sit est, et voluptatibus corrupti qui numquam tempora distinctio explicabo commodi ipsa ea enim in quis vel ipsam aperiam quibusdam quisquam. Facilis dicta delectus sunt molestias animi doloremque. Molestiae, quos suscipit!</p>
+    </main>
+</body>
+</html>
